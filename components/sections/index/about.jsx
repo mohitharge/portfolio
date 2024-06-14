@@ -30,6 +30,7 @@ export default function About() {
 				<SectionTitle
 					title="About Me"
 					preTitle="Synopsis"
+					id="aboutme"
 					subTitle="With a diverse skill set in front-end development, full-stack web development, responsive design, and API integration, I am a multifaceted digital creator. My experience includes designing innovative features, optimizing site performance, and executing seamless UI/UX designs, enabling me to deliver exceptional digital experiences and drive project success."
 				/>
 				<section className={about.content}>
