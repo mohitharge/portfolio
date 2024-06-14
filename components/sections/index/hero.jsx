@@ -57,6 +57,12 @@ export default function Hero() {
 					<h1 className={`${hero.header} ${hero.primaryDim}`}>
 						{content.header.usp}
 					</h1>
+					<br />
+					<div style={{display:"flex", alignItems:"center", gap:"8px"}}>
+            <i class="devicon-vscode-plain"></i> <h3>{content.header.des1}</h3> |
+						<i class="devicon-figma-plain"></i> <h3> {content.header.des3}</h3> |
+            <i class="devicon-devicon-plain"></i> <h3> {content.header.des2}</h3>
+					</div>
 				</section>
 				<section>
 					<p className={`${hero.primaryBright} subtitle ${space(["verticalLrg"])}`}>
@@ -65,11 +71,11 @@ export default function Hero() {
 				</section>
 				<section>
 					<button	className={`button ${button.primary}`}
-							onClick={ () => window.location = 'mailto:hello@andrewnelson.net' } >
+							onClick={ () => window.location = 'mailto:hargemohit@gmail.com' } >
 						{content.buttons.primary.title}
 					</button>
 					<button className={`button ${button.secondary} leaveSite`}
-							onClick={ ()=> window.open("https://www.linkedin.com/in/--andrewnelson/", "_blank") } >
+							onClick={ ()=> window.open("https://www.linkedin.com/in/mohitharge/", "_blank") } >
 						{content.buttons.secondary.title}
 					</button>
 				</section>

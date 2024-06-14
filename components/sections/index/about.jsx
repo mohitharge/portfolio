@@ -30,11 +30,11 @@ export default function About() {
 				<SectionTitle
 					title="About Me"
 					preTitle="Synopsis"
-					subTitle="With a diverse skill set that includes UX design, UI design, full stack development, operational architecture, systems design, photography, and branding, I am a well-rounded digital professional."
+					subTitle="With a diverse skill set in front-end development, full-stack web development, responsive design, and API integration, I am a multifaceted digital creator. My experience includes designing innovative features, optimizing site performance, and executing seamless UI/UX designs, enabling me to deliver exceptional digital experiences and drive project success."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
-						<img src="/img/family-photo.jpg" alt="Nelson family photo"/>
+						<img src="/img/mohitaboutimg2.webp" alt="Mohit's photo"/>
 						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
 					</div>
 					<div className={about.copy} >
@@ -43,7 +43,7 @@ export default function About() {
 							containerClass={about.container}
 							iconClass={about.icon}
 							icon={[ 'fat', 'ear-listen' ]}
-							copy="In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner / managing partner, husband, and father of two. Outside of work, I enjoy staying active through sports such as hockey and snowboarding. I am confident in my ability to bring passion and value to any project."
+							copy="In addition to my technical expertise in front-end & full-stack development, I possess strong problem-solving, time management, and collaboration skills—honed through my professional experiences and academic background. Outside work, I enjoy traveling, photography and continuously learning new technologies. I am confident in bringing passion and value to any project."
 						/>
 						<BadgesBlock 
 							title="Reasearch and planning" 

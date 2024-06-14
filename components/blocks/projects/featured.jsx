@@ -47,7 +47,7 @@ export default function FeaturedProject({ content }, index) {
 					<div className={css.stackContainer}>
 						<Badges list={stack} block="stack" fullContainer={false} color={false} />
 					</div>
-					<m.div variants={''} className={css.viewProject}>
+					<m.div variants={''} className={css.viewProject} onClick={ ()=> window.open(url, "_blank") }>
 						<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
 					</m.div>
 				</div>

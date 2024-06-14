@@ -34,16 +34,19 @@ export default function Technical() {
 				/>
 				<section className={`${about.content} ${about.container}`}>
 					<div className={about.copy}>
-						<CopyBlock 
-							title="Polymath foundations"
-							icon={[ 'fat', 'chart-network' ]}
-							copy="With a strong foundation in both design and development, I bring a unique perspective to every project and am constantly learning and evolving to stay up-to-date with the latest industry trends."
-							iconClass={about.icon}
+						<BadgesBlock 
+							title="Technologies I love to build with" 
+							copy="I deeply enjoy solving problems through code. From the front end all the way to the back end and the APIs in-between. Each project is new learning for me."
+							list={tech} 
+							block="tech"
+							fullContainer="fullContainer" 
+							icon="laptop-code"
 							containerClass={about.container}
+							headerIcon={about.icon} 
 						/>
 						<BadgesBlock 
 							title="Software I love to work with" 
-							copy="With over 20 years of experience creating digital assets, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time."
+							copy="With over 2.7+ years of experience developing web applications, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time."
 							list={software}
 							block="software" 
 							fullContainer="fullContainer"
@@ -51,15 +54,12 @@ export default function Technical() {
 							containerClass={about.container}
 							headerIcon={about.icon} 
 						/>
-						<BadgesBlock 
-							title="Technologies I love to build with" 
-							copy="I deeply enjoy solving problems through code. From the front end all the way to the back end and the APIs in-between. No project is too challenging for me."
-							list={tech} 
-							block="tech"
-							fullContainer="fullContainer" 
-							icon="laptop-code"
+						<CopyBlock 
+							title="Polymath foundations"
+							icon={[ 'fat', 'chart-network' ]}
+							copy="With a strong foundation in both design and development, I bring a unique perspective to every project and am constantly learning and evolving to stay up-to-date with the latest industry trends."
+							iconClass={about.icon}
 							containerClass={about.container}
-							headerIcon={about.icon} 
 						/>							
 					</div>
 					<div className={`${about.image} ${about.technicalSvg}`}>
@@ -73,31 +73,49 @@ export default function Technical() {
 }
 
 const software = [
-	{ key: 'photoshop', 	name: 'Photoshop', 			type: 'devicon' },
-	{ key: 'illustrator', 	name: 'Illustrator', 		type: 'devicon' },
-	{ key: 'figma', 		name: 'Figma', 				type: 'devicon' },
-	{ key: 'vscode', 		name: 'VSCode', 			type: 'devicon' },
-	{ key: 'mailbox', 		name: 'Postman', 			type: 'fas' },
-	{ key: 'computer-mouse',name: 'Click Up', 			type: 'fas' },
-	{ key: 'list-music',	name: 'Ableton', 			type: 'fas' },
-	{ key: 'aftereffects',	name: 'After Effects', 		type: 'devicon' },
-	{ key: 'premierepro',	name: 'Premiere Pro', 		type: 'devicon' },
-]
+  { key: 'vscode', name: 'VSCode', type: 'devicon' },
+  { key: 'mailbox', name: 'Postman', type: 'fas' },
+  { key: 'github', name: 'GitHub', type: 'devicon' },
+  { key: 'jenkins', name: 'Jenkins', type: 'devicon' },
+  { key: 'figma', name: 'Figma', type: 'devicon' },
+  { key: 'xd', name: 'Adobe XD', type: 'devicon' },
+  { key: 'photoshop', name: 'Photoshop', type: 'devicon' },
+  { key: 'codepen', name: 'Codepen', type: 'devicon' },
+  { key: 'atom', name: 'Atom', type: 'devicon' },
+  { key: 'bash', name: 'Bash', type: 'devicon' },
+  { key: 'terminal', name: 'Terminal', type: 'fas' },
+  { key: 'trello', name: 'Trello', type: 'devicon' },
+  { key: 'jira', name: 'Jira', type: 'devicon' },
+  { key: 'slack', name: 'Slack', type: 'devicon' },
+  { key: 'chrome', name: 'Chrome', type: 'devicon' },
+  { key: 'firefox', name: 'Firefox', type: 'devicon' },
+  { key: 'safari', name: 'Safari', type: 'devicon' },
+];
 
-const tech	= [
-	{ key: 'javascript', 	name: 'JavaScript', 		type: 'devicon' },
-	{ key: 'nodejs', 		name: 'NodeJS', 			type: 'devicon' },
-	{ key: 'react', 		name: 'React', 				type: 'devicon' },
-	{ key: 'nextjs', 		name: 'NextJS', 			type: 'devicon' },
-	{ key: 'jquery', 		name: 'jQuery', 			type: 'devicon' },
-	{ key: 'php', 			name: 'PHP', 				type: 'devicon' },
-	{ key: 'wordpress', 	name: 'WordPress', 			type: 'devicon' },
-	{ key: 'woocommerce', 	name: 'WooCommerce', 		type: 'devicon' },
-	{ key: "google",		name: "GA4/GTM", 			type: "devicon" },
-	{ key: 'html5', 		name: 'HTML5', 				type: 'devicon' },
-	{ key: 'css3', 			name: 'CSS3', 				type: 'devicon' },
-	{ key: 'sass', 			name: 'SASS', 				type: 'devicon' },
-	{ key: 'git', 			name: 'Git', 				type: 'devicon' },
-	{ key: 'mysql', 		name: 'MySQL', 				type: 'devicon' },
-	{ key: 'mongodb', 		name: 'MongoDB', 			type: 'devicon' },
-]
+const aiTools = [
+  { key: 'copilot', name: 'Copilot', type: 'fas' },
+  { key: 'chatgpt', name: 'Chatgpt', type: 'fas' },
+  { key: 'gemini', name: 'Gemini', type: 'fas' },
+];
+
+const tech = [
+  { key: 'javascript', name: 'JavaScript', type: 'devicon' },
+  { key: 'nodejs', name: 'Node.js', type: 'devicon' },
+  { key: 'react', name: 'React', type: 'devicon' },
+  { key: 'redux', name: 'Redux', type: 'devicon' },
+  { key: 'nextjs', name: 'Next.js', type: 'devicon' },
+  { key: 'jquery', name: 'jQuery', type: 'devicon' },
+  { key: 'webpack', name: 'webpack', type: 'devicon' },
+  { key: 'git', name: 'Git', type: 'devicon' },
+  { key: 'php', name: 'PHP', type: 'devicon' },
+  { key: 'html5', name: 'HTML5', type: 'devicon' },
+  { key: 'css3', name: 'CSS3', type: 'devicon' },
+  { key: 'tailwindcss', name: 'Tailwind CSS', type: 'devicon' },
+  { key: 'bootstrap', name: 'Bootstrap', type: 'devicon' },
+  { key: 'materialui', name: 'Material UI', type: 'devicon' },
+  { key: 'sass', name: 'SASS', type: 'devicon' },
+  { key: 'mysql', name: 'MySQL', type: 'devicon' },
+  { key: 'mongodb', name: 'MongoDB', type: 'devicon' },
+  { key: 'python', name: 'Python', type: 'devicon' },
+  { key: 'java', name: 'Java', type: 'devicon' }
+];

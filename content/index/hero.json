@@ -12,20 +12,23 @@
 
 	"header": {
 		"name": "Mohit Harge.",
-		"usp": "I design and build meaningful experiences."
+		"usp": "I design and build meaningful experiences.",
+		"des1": "Front-End Developer",
+		"des2": "Software Engineer",
+		"des3": "UI-UX Designer"
 	},
 
-	"paragraph": "I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact.",
+	"paragraph": "I am a dynamic and innovative software engineer with a relentless passion for crafting exceptional digital experiences and driving team success.",
 
 	"buttons": {
 		"primary": {
 			"title": "Contact Me",
-			"url": "",
+			"url": "mailto:hargemohit@gmail.com",
 			"leaveSite": false
 		},
 		"secondary": {
 			"title": "LinkedIn",
-			"url": "",
+			"url": "https://www.linkedin.com/in/mohitharge/",
 			"leaveSite": "true"
 		}
 	}
