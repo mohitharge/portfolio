@@ -32,16 +32,44 @@
 
 	"social": [
 		{
-			"url": "https://medium.com/@hargemohit",
-			"icon": "medium"
-		},
-		{
 			"url": "https://www.linkedin.com/in/mohitharge/",
 			"icon": "linkedin"
 		},
 		{
 			"url": "https://github.com/mohitharge",
 			"icon": "github"
+		},
+		{
+			"url": "https://mohitharge.hashnode.dev/",
+			"icon": "hashnode"
+		},
+		{
+			"url": "https://www.upwork.com/freelancers/~017b27cd4e56a389e0?mp_source=share",
+			"icon": "upwork"
+		},
+		{
+			"url": "https://www.freelancer.in/u/hargemohit?sb=t",
+			"icon": "freelancer"
+		},
+		{
+			"url": "https://www.hackerrank.com/profile/hargemohit",
+			"icon": "hackerrank"
+		},
+		{
+			"url": "https://leetcode.com/u/hargemohit/",
+			"icon": "leetcode"
+		},
+		{
+			"url": "https://www.figma.com/@mohitharge",
+			"icon": "figma"
+		},
+		{
+			"url": "https://www.behance.net/mohitharge",
+			"icon": "behance"
+		},
+		{
+			"url": "https://medium.com/@hargemohit",
+			"icon": "medium"
 		}
 	]
 }

@@ -52,8 +52,8 @@ export default function Hero() {
 				/>
 				<section>
 					<h1 className={hero.header}>
-						{content.header.name}
-						</h1>
+					{content.header.name}
+					</h1>
 					<h1 className={`${hero.header} ${hero.primaryDim}`}>
 						{content.header.usp}
 					</h1>
@@ -71,7 +71,10 @@ export default function Hero() {
 				</section>
 				<section>
 					<button	className={`button ${button.primary}`}
-							onClick={ () => window.location = 'mailto:hargemohit@gmail.com' } >
+							onClick={ (e) => {
+								window.location.href = 'mailto:hargemohit@gmail.com'
+								e.preventDefault()
+								} } >
 						{content.buttons.primary.title}
 					</button>
 					<button className={`button ${button.secondary} leaveSite`}
