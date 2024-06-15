@@ -79,6 +79,7 @@ const software = [
   { key: 'jenkins', name: 'Jenkins', type: 'devicon' },
   { key: 'figma', name: 'Figma', type: 'devicon' },
   { key: 'xd', name: 'Adobe XD', type: 'devicon' },
+  { key: 'canva', name: 'Canva', type: 'devicon' },
   { key: 'photoshop', name: 'Photoshop', type: 'devicon' },
   { key: 'codepen', name: 'Codepen', type: 'devicon' },
   { key: 'atom', name: 'Atom', type: 'devicon' },
@@ -90,6 +91,8 @@ const software = [
   { key: 'chrome', name: 'Chrome', type: 'devicon' },
   { key: 'firefox', name: 'Firefox', type: 'devicon' },
   { key: 'safari', name: 'Safari', type: 'devicon' },
+  { key: 'vercel', name: 'Vercel', type: 'devicon' },
+  { key: 'netlify', name: 'Netlify', type: 'devicon' },
 ];
 
 const aiTools = [
@@ -107,10 +110,11 @@ const tech = [
   { key: 'jquery', name: 'jQuery', type: 'devicon' },
   { key: 'webpack', name: 'webpack', type: 'devicon' },
   { key: 'git', name: 'Git', type: 'devicon' },
-  { key: 'php', name: 'PHP', type: 'devicon' },
   { key: 'html5', name: 'HTML5', type: 'devicon' },
   { key: 'css3', name: 'CSS3', type: 'devicon' },
   { key: 'tailwindcss', name: 'Tailwind CSS', type: 'devicon' },
+  { key: 'php', name: 'PHP', type: 'devicon' },
+  { key: 'laravel', name: 'Laravel', type: 'devicon' },
   { key: 'bootstrap', name: 'Bootstrap', type: 'devicon' },
   { key: 'materialui', name: 'Material UI', type: 'devicon' },
   { key: 'sass', name: 'SASS', type: 'devicon' },

@@ -8,9 +8,8 @@
 		"imageOptions": [
 		],
 		"images": [
-			{ "key": "mock-stack",	"hover": "right", 	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/03.png" },
-			{ "key": "mock-stack",	"hover": "right",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/02.png" },
-			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/01.png" }
+			{ "key": "mock-stack",	"hover": "right", 	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/icip2.png" },
+			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/icip1.png" }
 		],
 		"stack": [
 			{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
@@ -27,16 +26,17 @@
 		]
 	},
 	{
-		"project": "andrewnelson.net",
-		"url": "https://github.com/atlamors/portfolio",
-		"repo": "Public",
-		"descriptionTitle": "An open source portfolio",
-		"description": "built on Next.js and React. A fast and agile MERN stack single page application.",
+		"project": "BD Growth Suite",
+		"url": "https://bdgrowthsuite.com/",
+		"repo": "Private",
+		"descriptionTitle": "BD Growth Suite",
+		"description": "is a ultimate technical support platform for Brilliant Directories Development and Maintenance",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
+			{ "key": "portfolio", "hover": "left", "h": "1200", "w": "556",  "url": "/img/bd1.png" },
+			{ "key": "portfolio", "hover": "right", "h": "1200", "w": "556",  "url": "/img/bd2.png" }
 		],
 		"stack": [
 			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
