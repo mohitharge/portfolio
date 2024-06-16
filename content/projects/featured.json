@@ -8,8 +8,8 @@
 		"imageOptions": [
 		],
 		"images": [
-			{ "key": "mock-stack",	"hover": "right", 	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/icip2.png" },
-			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/icip1.png" }
+			{ "key": "mock-stack",	"hover": "right", 	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/rbgic2.png" },
+			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/rbgic1.png" }
 		],
 		"stack": [
 			{ "key": "javascript", "name": "JavaScript", "type": "devicon" },

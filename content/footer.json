@@ -52,12 +52,12 @@
 			"icon": "freelancer"
 		},
 		{
-			"url": "https://www.hackerrank.com/profile/hargemohit",
-			"icon": "hackerrank"
-		},
-		{
 			"url": "https://leetcode.com/u/hargemohit/",
 			"icon": "leetcode"
+		},
+		{
+			"url": "https://www.hackerrank.com/profile/hargemohit",
+			"icon": "hackerrank"
 		},
 		{
 			"url": "https://www.figma.com/@mohitharge",
