@@ -33,7 +33,7 @@ export default function FeaturedProject({ content }, index) {
 			ref={ref}
 			variants={container}
 			initial={[ "rest", "hidden" ]}
-			whileHover="hover"
+			whilehover="hover"
 			// animate={controls} 
 			>
 			

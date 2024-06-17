@@ -60,7 +60,7 @@ export default function Badges({ list, block, color, fullContainer }) {
 				variants={container}
 				initial="hidden"
 				// animate={controls}
-				whileHover="hover"
+				whilehover="hover"
 		>
 		{
 		list.map( ({ key, name, type }) => {
