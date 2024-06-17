@@ -134,7 +134,7 @@ export default function Navbar() {
 		<nav id="Navbar" className={css.container}>
 			<ul className={css.menu}>
 				<li className={css.menuHeader}>
-					<i class="devicon-github-original"></i>
+					<i className="devicon-github-original"></i>
 					<Link className={css.logo} href="/"  >
 						{settings.name}
 					</Link>

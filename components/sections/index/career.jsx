@@ -47,7 +47,7 @@ export default function Career() {
 					<article className={career.companyPositions}>
 						{/* <div className={career.position}>
 							<div className={career.positionContent}>
-								<span class={career.positionHeader}>
+								<span className={career.positionHeader}>
 									<h3>Director of Product Design and Development</h3>
 									<h4>Nov 2021 - Present · 1 yrs 3 mos</h4>
 								</span>
@@ -60,7 +60,7 @@ export default function Career() {
 
 						<div className={career.position}>
 							<div className={career.positionContent}>
-								<span class={career.positionHeader}>
+								<span className={career.positionHeader}>
 									<h3>Technology Specialist</h3>
 									<h4>May 2022 - Present · 2 yrs 02 mos</h4>
 								</span>
@@ -92,7 +92,7 @@ export default function Career() {
 					
 						{/* <div className={career.position}>
 							<div className={career.positionContent}>
-									<span class={career.positionHeader}>
+									<span className={career.positionHeader}>
 										<h3>Front End Developer & User Interface Designer</h3>
 										<h4>Apr 2019 - Feb 2020 · 11 mos</h4>
 									</span>
@@ -138,7 +138,7 @@ export default function Career() {
 					<article className={career.companyPositions}>
 						<div className={career.position}>
 							<div className={career.positionContent}>
-								<span class={career.positionHeader}>
+								<span className={career.positionHeader}>
 									<h3>Project Management Intern</h3>
 									<h4>Dec 2021 - Jan 2022 · 02 mos</h4>
 								</span>
@@ -151,7 +151,7 @@ export default function Career() {
 
 						<div className={career.position}>
 							<div className={career.positionContent}>
-								<span class={career.positionHeader}>
+								<span className={career.positionHeader}>
 									<h3>Full Stack Developer & User Experience Intern</h3>
 									<h4>Aug 2021 - Nov 2021 · 04 mos</h4>
 								</span>

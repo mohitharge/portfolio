@@ -59,9 +59,9 @@ export default function Hero() {
 					</h1>
 					<br />
 					<div style={{display:"flex", alignItems:"center", gap:"8px"}}>
-            <i class="devicon-vscode-plain"></i> <h3>{content.header.des1}</h3> |
-						<i class="devicon-figma-plain"></i> <h3> {content.header.des3}</h3> |
-            <i class="devicon-devicon-plain"></i> <h3> {content.header.des2}</h3>
+            <i className="devicon-vscode-plain"></i> <h3>{content.header.des1}</h3> |
+						<i className="devicon-figma-plain"></i> <h3> {content.header.des3}</h3> |
+            <i className="devicon-devicon-plain"></i> <h3> {content.header.des2}</h3>
 					</div>
 				</section>
 				<section>
