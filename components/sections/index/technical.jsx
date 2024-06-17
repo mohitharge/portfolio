@@ -107,6 +107,7 @@ const tech = [
   { key: 'react', name: 'React', type: 'devicon' },
   { key: 'redux', name: 'Redux', type: 'devicon' },
   { key: 'nextjs', name: 'Next.js', type: 'devicon' },
+  { key: 'typescript', name: 'Typescript', type: 'devicon' },
   { key: 'jquery', name: 'jQuery', type: 'devicon' },
   { key: 'webpack', name: 'webpack', type: 'devicon' },
   { key: 'git', name: 'Git', type: 'devicon' },
