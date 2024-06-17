@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import { useEffect } from 'react'
-import { m, useAnimation } from "framer-motion"
+// import { m, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
 
 import Badges 		from '../../utils/badge.list.util'
@@ -14,19 +14,19 @@ export default function FeaturedProject({ content }, index) {
 
 	const { project, url, repo, descriptionTitle,description, stack, imageOptions, images } = content
 
-	const controls = useAnimation();
+	// const controls = useAnimation();
 	const { ref, inView  } = useInView({
 		"threshold": 0.25,
 		"triggerOnce": false
 	})
 
-	useEffect( () => {
-		if ( inView ) {	controls.start("visible") }
-		if ( !inView ) { controls.start("hidden") }
-	}, [ controls, inView ] )
+	// useEffect( () => {
+	// 	if ( inView ) {	controls.start("visible") }
+	// 	if ( !inView ) { controls.start("hidden") }
+	// }, [ controls, inView ] )
 
 	return (
-		<m.section 	
+		<section 	
 			key={index}
 			className={css.project} 
 			//framer-motion
@@ -34,7 +34,8 @@ export default function FeaturedProject({ content }, index) {
 			variants={container}
 			initial={[ "rest", "hidden" ]}
 			whileHover="hover"
-			animate={controls} >
+			// animate={controls} 
+			>
 			
 			<div className={css.details}>
 				<div className={css.projectHeader}>
@@ -47,9 +48,9 @@ export default function FeaturedProject({ content }, index) {
 					<div className={css.stackContainer}>
 						<Badges list={stack} block="stack" fullContainer={false} color={false} />
 					</div>
-					<m.div variants={''} className={css.viewProject} onClick={ ()=> window.open(url, "_blank") }>
+					<div variants={''} className={css.viewProject} onClick={ ()=> window.open(url, "_blank") }>
 						<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
-					</m.div>
+					</div>
 				</div>
 			</div>
 
@@ -58,16 +59,16 @@ export default function FeaturedProject({ content }, index) {
 					{ images.map( ({key, url, hover, h, w }, index) => {
 						hover = ( hover === 'left' ) ? hoverLeft : hoverRight
 						return (
-							<m.div key={`${index}-${key}`} variants={item}>
-								<m.div variants={hover}>
+							<div key={`${index}-${key}`} variants={item}>
+								<div variants={hover}>
 									<Image src={url} alt="x" height={h} width={w} />
-								</m.div>
-							</m.div>
+								</div>
+							</div>
 						)}
 					) }
 				</span>
 			</div>
-		</m.section>
+		</section>
 	)
 }
 

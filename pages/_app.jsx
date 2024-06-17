@@ -1,6 +1,6 @@
 // Core packages
 import { Analytics } from '@vercel/analytics/react';
-import { LazyMotion, domAnimation } from "framer-motion"
+// import { LazyMotion, domAnimation } from "framer-motion"
 
 // Utils
 import SetGridGap from '../components/utils/set.grid.util'
@@ -35,13 +35,13 @@ import '../styles/css/global.css'
 export default function MyApp({ Component, pageProps }) {
 	return (
 		<>
-		<LazyMotion features={domAnimation}>
+		{/* <LazyMotion features={domAnimation}> */}
 			<Layout>
 				<Component {...pageProps} />
 				<SetGridGap />
 				<Analytics />
 			</Layout>
-		</LazyMotion>
+		{/* </LazyMotion> */}
 		</>
 	)
 }

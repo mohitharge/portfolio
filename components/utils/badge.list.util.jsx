@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { m, useAnimation } from "framer-motion"
+// import { m, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
 
 // Utility components
@@ -13,16 +13,16 @@ import badges from '../../styles/blocks/badges.module.scss';
 
 export default function Badges({ list, block, color, fullContainer }) {
 
-	const controls = useAnimation();
-	const { ref, inView  } = useInView({
-		"threshold": 0.5,
-		"triggerOnce": false
-	})
+	// const controls = useAnimation();
+	// const { ref, inView  } = useInView({
+	// 	"threshold": 0.5,
+	// 	"triggerOnce": false
+	// })
 
-	useEffect( () => {
-		if ( inView ) {	controls.start("visible") }
-		if ( !inView ) { controls.start("hidden") }
-	}, [ controls, inView ] );
+	// useEffect( () => {
+	// 	if ( inView ) {	controls.start("visible") }
+	// 	if ( !inView ) { controls.start("hidden") }
+	// }, [ controls, inView ] );
 
 	const container = {
 		hidden: { 
@@ -53,30 +53,30 @@ export default function Badges({ list, block, color, fullContainer }) {
 	}
 
 	return (
-		<m.ul
+		<ul
 			className={`${badges.list} ${badges[block]} ${badges[fullContainer]}`}
 			//Animations
-				ref={ref}
+				// ref={ref}
 				variants={container}
 				initial="hidden"
-				animate={controls}
+				// animate={controls}
 				whileHover="hover"
 		>
 		{
 		list.map( ({ key, name, type }) => {
 			return ( 
-				<m.li 
+				<li 
 					key={name} 
 					className={`${badges.item} ${key}`}
 					//Animations
 					variants={item} >
 					<IconModule iconKey={key} iconType={type} color={color}/>
 					<span className={badges.title}>{name}</span>
-				</m.li> 
+				</li> 
 				)
 			}) 
 		}
-		</m.ul>
+		</ul>
 	)
 }
 

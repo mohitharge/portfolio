@@ -3,7 +3,9 @@
 .hasBg {
 	border-bottom: 1px solid var(--primary-dark);
 }
-
+.hasBg iframe {
+	height: 100vh;
+}
 .project {
 	display: flex;
 	flex-direction: row;
@@ -39,9 +41,10 @@
 	gap: var(--size-3x);
 
 	p {
-		font-size: 1.75rem;
+		font-size: 1.4rem;
 		line-height: 1.2;
-
+		font-family: var(--font-accent);
+		color: #666666;
 		strong {
 			color: var(--primary-bright);
 		}

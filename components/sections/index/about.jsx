@@ -35,8 +35,12 @@ export default function About() {
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
-						<img src="/img/mohitaboutimg2.webp" alt="Mohit's photo"/>
-						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
+					<Image
+						src="/img/aboutimg1.webp"
+						layout="fill"
+						objectFit="cover" // Adjust as needed (cover, contain, fill)
+						alt="Mohit's photo"
+					/>
 					</div>
 					<div className={about.copy} >
 						<CopyBlock 
