@@ -21,7 +21,7 @@ const FigmaEmbed = ({ url }) => {
     <iframe
       title="Figma Embed"
       width={800}
-      height={450}
+      height={980}
       src={`https://www.figma.com/embed?embed_host=share&${url}`}
       allowFullScreen
     />
