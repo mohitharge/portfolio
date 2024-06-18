@@ -28,9 +28,9 @@ export default function HomePage() {
 	return (
 		<>
 			<SEO 
-        title="Mohit Harge - Front-End Developer"
+        title="Mohit Harge - Software Engineer"
         description="Experienced Front-End Developer with a demonstrated history of working in the web development industry. Skilled in React.js, HTML5, CSS3, and responsive design."
-        keywords="Front-End Developer, React.js, Next.js, Web Development, HTML5, CSS3, Portfolio"
+        keywords="Front-End Developer, React.js, Next.js, Web Development, HTML5, CSS3, Portfolio, Software Engineer, Javascript"
         author="Mohit Harge"
         image="https://raw.githubusercontent.com/mohitharge/portfolio/main/public/img/mythumbnail.png"
         url="https://mohitharge.vercel.app/"

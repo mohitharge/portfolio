@@ -91,8 +91,8 @@ const software = [
   { key: 'chrome', name: 'Chrome', type: 'devicon' },
   { key: 'firefox', name: 'Firefox', type: 'devicon' },
   { key: 'safari', name: 'Safari', type: 'devicon' },
-  { key: 'vercel', name: 'Vercel', type: 'devicon' },
-  { key: 'netlify', name: 'Netlify', type: 'devicon' },
+  { key: 'vagrant', name: 'Vercel', type: 'devicon' },
+  { key: 'dot-net', name: 'Netlify', type: 'devicon' },
 ];
 
 const aiTools = [

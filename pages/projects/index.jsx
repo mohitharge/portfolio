@@ -37,7 +37,7 @@ export default function Projects({ user, repos }) {
 			<SEO 
         title="Projects - Mohit Harge"
         description="Explore the projects developed by Mohit Harge, showcasing skills in full-stack development, UI/UX design, and more."
-        keywords="Projects, Full-Stack Development Projects, UI/UX Design Projects, Mohit Harge"
+        keywords="Projects, Full-Stack Development Projects, Frontend Development Projects, UI/UX Design Projects, Mohit Harge"
         author="Mohit Harge"
         image="https://mohitharge.vercel.app/projects-image.jpg"
         url="https://mohitharge.vercel.app/projects"

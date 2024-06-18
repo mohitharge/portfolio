@@ -22,14 +22,14 @@
 
 	"buttons": {
 		"primary": {
-			"title": "Contact Me",
-			"url": "mailto:hargemohit@gmail.com",
-			"leaveSite": false
-		},
-		"secondary": {
 			"title": "LinkedIn",
 			"url": "https://www.linkedin.com/in/mohitharge/",
 			"leaveSite": "true"
+		},
+		"secondary": {
+			"title": "Contact Me",
+			"url": "mailto:hargemohit@gmail.com",
+			"leaveSite": false
 		}
 	}
 }

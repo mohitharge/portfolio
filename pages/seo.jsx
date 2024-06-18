@@ -20,6 +20,7 @@ const SEO = ({ title, description, keywords, author, image, url, structuredData 
       <meta name="twitter:image" content={image} />
       <meta name="twitter:site" content="@yourtwitterhandle" />
       <link rel="canonical" href={url} />
+      <link rel="icon" type="image/x-icon" href="favicon/t.ico"></link>
 
       {structuredData && (
         <script
