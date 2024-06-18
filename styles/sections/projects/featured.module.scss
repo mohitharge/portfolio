@@ -113,6 +113,15 @@
 	flex-grow: 1;
 	flex-shrink: 0;
 
+	.imageAnimationContainer2 {
+		position: absolute;
+    overflow: hidden;
+    top: 1.8rem;
+    right: 1.7rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+	}
 	.imageAnimationContainer {
 		position: absolute;
 		overflow: hidden;

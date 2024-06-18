@@ -55,7 +55,7 @@ export default function FeaturedProject({ content }, index) {
 			</div>
 
 			<div className={css.imageContainer}>
-				<span className={`${css.imageAnimationContainer}`}>
+				<span className={project == "UI UX Project" ? `${css.imageAnimationContainer2}` : `${css.imageAnimationContainer}`}>
 					{ images.map( ({key, url, hover, h, w }, index) => {
 						hover = ( hover === 'left' ) ? hoverLeft : hoverRight
 						return (

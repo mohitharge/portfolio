@@ -36,7 +36,7 @@ export default function About() {
 				<section className={about.content}>
 					<div className={about.image}>
 					<Image
-						src="/img/aboutimg1.webp"
+						src="/img/aboutimg3.webp"
 						layout="fill"
 						objectFit="cover" // Adjust as needed (cover, contain, fill)
 						alt="Mohit's photo"

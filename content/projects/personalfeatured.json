@@ -1,0 +1,71 @@
+[
+	{
+		"project": "Rent A Car",
+		"url": "https://mohitharge.000webhostapp.com/rentacar/",
+		"repo": "Public",
+		"descriptionTitle": "",
+		"description": "Developed a comprehensive Car Rental Agency application utilizing HTML5, CSS3, Bootstrap, PHP, JavaScript, Ajax, jQuery, and MySQL. Implemented a secure login and registration system with robust validations, supporting multiple user roles for both agency staff and customers..",
+		"imageOptions": [
+		],
+		"images": [
+			{ "key": "mock-stack",	"hover": "right", 	"h": "1200", "w": "556", "url": "/img/r1.png" },
+			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/r2.png" }
+		],
+		"stack": [
+			{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+      { "key": "jquery", "name": "jQuery", "type": "devicon" },
+      { "key": "webpack", "name": "webpack", "type": "devicon" },
+      { "key": "html5", "name": "HTML5", "type": "devicon" },
+      { "key": "css3", "name": "CSS3", "type": "devicon" },
+      { "key": "tailwindcss", "name": "Tailwind CSS", "type": "devicon" },
+      { "key": "php", "name": "PHP", "type": "devicon" },
+      { "key": "laravel", "name": "Laravel", "type": "devicon" },
+      { "key": "bootstrap", "name": "Bootstrap", "type": "devicon" },
+      { "key": "mysql", "name": "MySQL", "type": "devicon" }
+		]
+	},
+	{
+		"project": "Collection Corner",
+		"url": "https://mohitharge.000webhostapp.com/collection_corner/",
+		"repo": "Public",
+		"descriptionTitle": "",
+		"description": "Developed the Collection Corner website in association with Mahatma Gandhi Mission's College of Engineering, Nanded. The web application, built using HTML5, CSS3, Bootstrap, PHP, JavaScript, Ajax, jQuery, and MySQL, features a secure login and registration system with validations and email verification. Additionally, it includes a live chat system, profile settings, and posts settings, enhancing user interaction and customization.",
+		"imageOptions": [
+			{ "key": "size", 		"value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "1200", "w": "556",  "url": "/img/c1.png" },
+			{ "key": "portfolio", "hover": "right", "h": "1200", "w": "556",  "url": "/img/c2.png" }
+		],
+		"stack": [
+			{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+      { "key": "jquery", "name": "jQuery", "type": "devicon" },
+      { "key": "webpack", "name": "webpack", "type": "devicon" },
+      { "key": "html5", "name": "HTML5", "type": "devicon" },
+      { "key": "css3", "name": "CSS3", "type": "devicon" },
+      { "key": "tailwindcss", "name": "Tailwind CSS", "type": "devicon" },
+      { "key": "php", "name": "PHP", "type": "devicon" },
+      { "key": "laravel", "name": "Laravel", "type": "devicon" },
+      { "key": "bootstrap", "name": "Bootstrap", "type": "devicon" },
+      { "key": "mysql", "name": "MySQL", "type": "devicon" }
+		]
+	},
+	{
+		"project": "UI UX Project",
+		"url": "",
+		"repo": "Private",
+		"descriptionTitle": "",
+		"description": "Designed wireframes and high-fidelity designs for a freelancing website using Adobe XD. The project included detailed layouts for the landing page, search results of freelancers, and profile pages. These designs focused on user experience and intuitive navigation, providing a seamless interface for users to browse and connect with freelancers effectively.",
+		"imageOptions": [
+			{ "key": "size", 		"value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "1258", "w": "2236",  "url": "/img/pd1.png" },
+			{ "key": "portfolio", "hover": "right", "h": "1258", "w": "2236",  "url": "/img/pd3.png" }
+		],
+		"stack": [
+      { "key": "xd", "name": "Adobe XD", "type": "devicon" },
+			{ "key": "figma", "name": "Figma", "type": "devicon" }
+		]
+	}
+]
