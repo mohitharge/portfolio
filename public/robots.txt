@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mohitharge.vercel.app
+
+# Sitemaps
+Sitemap: https://mohitharge.vercel.app/sitemap.xml
