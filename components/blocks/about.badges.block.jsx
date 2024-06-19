@@ -4,7 +4,7 @@ import Badges 	from '../utils/badge.list.util'
 
 import badges 	from '../../styles/blocks/badges.module.scss';
 
-export default function BadgesBlock({ title, copy, list, fullContainer, block, icon, invertedColor, headerIcon, containerClass }) {
+export default function BadgesBlock({ title, copy, list, fullContainer, block, icon, invertedColor, headerIcon, containerClass, page }) {
 	return (
 		<div className={`${badges.badgeBlockContainer} ${containerClass}`}>
 			<span className={headerIcon}>
@@ -12,7 +12,7 @@ export default function BadgesBlock({ title, copy, list, fullContainer, block, i
 			</span>
 			<h3>{title}</h3>
 			<Copy copy={copy} />
-			<Badges list={list} block={block} invertedColor={invertedColor} fullContainer={fullContainer} />
+			<Badges page={page} list={list} block={block} invertedColor={invertedColor} fullContainer={fullContainer} />
 		</div>
 	)
 }

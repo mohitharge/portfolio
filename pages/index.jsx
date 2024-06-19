@@ -29,7 +29,7 @@ export default function HomePage() {
 		<>
 			<SEO 
         title="Mohit Harge - Software Engineer"
-        description="Experienced Front-End Developer with a demonstrated history of working in the web development industry. Skilled in React.js, HTML5, CSS3, and responsive design."
+        description="Experienced Front-End Developer with a demonstrated history of working in the software development industry. Skilled in React.js, HTML5, CSS3, and responsive design."
         keywords="Front-End Developer, React.js, Next.js, Web Development, HTML5, CSS3, Portfolio, Software Engineer, Javascript"
         author="Mohit Harge"
         image="https://raw.githubusercontent.com/mohitharge/portfolio/main/public/img/mythumbnail.png"

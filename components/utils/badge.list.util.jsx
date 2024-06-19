@@ -11,7 +11,7 @@ import Icon from '../utils/icon.util.jsx'
 import badges from '../../styles/blocks/badges.module.scss';
 
 
-export default function Badges({ list, block, color, fullContainer }) {
+export default function Badges({ list, block, color, fullContainer, page }) {
 
 	// const controls = useAnimation();
 	// const { ref, inView  } = useInView({
@@ -66,7 +66,8 @@ export default function Badges({ list, block, color, fullContainer }) {
 		list.map( ({ key, name, type }) => {
 			return ( 
 				<li 
-					key={name} 
+					key={name}
+					style={page == "services" ? {width:"100%", fontSize:"16px"} : {}} 
 					className={`${badges.item} ${key}`}
 					//Animations
 					variants={item} >

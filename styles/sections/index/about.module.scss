@@ -65,8 +65,37 @@
 				margin-bottom: var(--size-1x);
 			}
 		}
+    .container2{
+			display: flex;
+			flex-direction: column;
+			gap: var(--size-1x);
+			border: 1px solid var(--primary-dark);
+			border-radius: 2rem;
+			background: var(--background-dim2);
+			box-shadow: 0 0 30px var(--background);
+			overflow: hidden;
+			width: 48%;
+			padding: var(--padding);
+			--padding: 2rem;
+			--padding-left: var(--padding);
+			--padding-top: var(--padding);
+			--padding-right: var(--padding);
+			--padding-bottom: var(--padding);
 
+			&:not(:last-of-type) {
+				margin-bottom: var(--size-1x);
+			}
+		}
 		.copy {
+			flex-basis: calc(40% + 1px);
+			flex-grow: 1;
+			flex-shrink: 1;
+		}
+		
+		.copy2 {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2rem;
 			flex-basis: calc(60% + 1px);
 			flex-grow: 1;
 			flex-shrink: 1;
