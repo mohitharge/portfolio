@@ -9,7 +9,8 @@ import BadgesBlock from '../components/blocks/about.badges.block'
 import about from '../styles/sections/index/about.module.scss'
 import Section from '../components/structure/section'
 import SectionTitle from '../components/blocks/section.title.block'
-import BentoGridThirdDemo from './servicenew'
+import { isDesktop } from '../components/helperhooks'
+
 const Services = () => {
   const structuredData = {
     "@context": "https://schema.org",
@@ -136,10 +137,10 @@ const Services = () => {
         <h1>Get Started with Our Services</h1>
         <p>To help us understand your needs better and provide you with the best possible service, please fill out the questionnaire for the specific service you are interested in.</p>
         <div style={{display:"flex", flexDirection:"column", alignItems:"center", marginTop:"2rem"}}>
-          <div style={{padding:"0 2rem"}}>
+          <div style={isDesktop ? {padding:"0 2rem"} : {}}>
             <Image style={{cursor:"pointer"}} onClick={ ()=> window.open("https://forms.gle/g2h8S9gVxNr2MToz5", "_blank")} height={200} width={645} src="/img/questionnaire.png" alt="questionnaire" />
           </div>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe94vsVtazvKEVogk389OnOBjgGJ8qbi_dWu0lRpPFSqMPcYg/viewform?embedded=true" width="900" height="3400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe94vsVtazvKEVogk389OnOBjgGJ8qbi_dWu0lRpPFSqMPcYg/viewform?embedded=true" width={isDesktop ? "900" : "390"} height={isDesktop ? "3400" : "3600"} frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
       </div>
     </>

@@ -9,6 +9,7 @@ import Icon 		from '../../utils/icon.util'
 
 import css 			from '../../../styles/sections/projects/featured.module.scss'
 import content 		from '../../../content/projects/featured.json'
+import { isDesktop } from '../../helperhooks'
 
 export default function FeaturedProject({ content }, index) {
 
@@ -61,7 +62,7 @@ export default function FeaturedProject({ content }, index) {
 						return (
 							<div key={`${index}-${key}`} variants={item}>
 								<div variants={hover}>
-									<Image src={url} alt="x" height={h} width={w} />
+									{ <Image src={url} alt="x" height={h} width={w} />}
 								</div>
 							</div>
 						)}

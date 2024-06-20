@@ -149,7 +149,7 @@ $background: 	--background-dim2;
 	.list {
 		&.methods {
 			.item {
-				font-size: .75rem;
+				font-size: .75rem !important;
 				padding: 0.5rem;
 				letter-spacing: -.025rem;
 

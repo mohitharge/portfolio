@@ -121,6 +121,13 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 1rem;
+		> div > div {
+
+			> span {
+				position: absolute !important;
+				right: 4rem;
+			}
+		}
 	}
 	.imageAnimationContainer {
 		position: absolute;
@@ -336,3 +343,16 @@
 	}
 }
 
+@include media($max: $mobile) {
+	.projectHeader {
+		p {
+			font-size: 0.9rem;
+			line-height: 1.2;
+			font-family: var(--font-accent);
+			color: #666666;
+			strong {
+				color: var(--primary-bright);
+			}
+		}
+	}
+}
