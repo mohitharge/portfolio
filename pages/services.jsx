@@ -9,7 +9,7 @@ import BadgesBlock from '../components/blocks/about.badges.block'
 import about from '../styles/sections/index/about.module.scss'
 import Section from '../components/structure/section'
 import SectionTitle from '../components/blocks/section.title.block'
-import { isDesktop } from '../components/helperhooks'
+import { isDesktop } from '../components/helperhooks/helperhooks'
 
 const Services = () => {
   const structuredData = {

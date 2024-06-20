@@ -6,7 +6,7 @@ import Career from '../components/sections/index/career'
 import Looking from '../components/sections/index/looking'
 import Technical from '../components/sections/index/technical'
 import button 		from '../styles/blocks/button.module.scss';
-import { isDesktop } from '../components/helperhooks'
+import { isDesktop } from '../components/helperhooks/helperhooks'
 
 const Resume = () => {
   const structuredData = {
