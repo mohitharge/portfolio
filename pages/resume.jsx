@@ -5,6 +5,8 @@ import colors from '../content/index/_colors.json'
 import Career from '../components/sections/index/career'
 import Looking from '../components/sections/index/looking'
 import Technical from '../components/sections/index/technical'
+import button 		from '../styles/blocks/button.module.scss';
+import { isDesktop } from '../components/helperhooks'
 
 const Resume = () => {
   const structuredData = {
@@ -59,6 +61,12 @@ const Resume = () => {
         structuredData={structuredData}
       />
       <div style={{ minHeight: "calc(100vh - 200px)" }}>
+        <div style={{marginTop:"8rem", textAlign:"center", marginBottom:"-4rem"}}>
+          <button className={`button ${button.secondary} leaveSite`}
+              onClick={() => window.open("/resume.pdf", "_blank")} >
+            {`${isDesktop ? "Download Resume PDF - June,2024" : "Download PDF - June,2024"}`}
+          </button>
+        </div>
         <Color colors={colors} />
         <Career />
         <Looking />
