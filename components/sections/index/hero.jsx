@@ -68,8 +68,20 @@ export default function Hero() {
 					<p className={`${hero.primaryBright} subtitle ${space(["verticalLrg"])}`}>
 						{ content.paragraph }
 					</p>					
+					<section>
+						<button className={`button ${button.primary}`} onClick={() => 
+								window.open("https://www.linkedin.com/in/mohitharge/", "_blank")
+						}>
+								{content.buttons.primary.title}
+						</button>
+						<button className={`button ${button.secondary} leaveSite`}
+						onClick={(e) => {
+								e.preventDefault();
+								window.location.href = 'mailto:hargemohit@gmail.com';
+						}}>
+								{content.buttons.secondary.title}
+						</button>
 				</section>
-				<section>
 					<button	className={`button ${button.primary}`}
 							onClick={ (e) => {
 								window.location.href = 'mailto:hargemohit@gmail.com'
