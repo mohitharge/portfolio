@@ -14,6 +14,7 @@ import hero 		from '../../../styles/sections/index/hero.module.scss';
 import button 		from '../../../styles/blocks/button.module.scss';
 
 import content		from '../../../content/index/hero.json'
+import { isDesktop } from '../../helperhooks/helperhooks';
 
 
 /**
@@ -68,7 +69,6 @@ export default function Hero() {
 					<p className={`${hero.primaryBright} subtitle ${space(["verticalLrg"])}`}>
 						{ content.paragraph }
 					</p>					
-					<section>
 						<button className={`button ${button.primary}`} onClick={() => 
 								window.open("https://www.linkedin.com/in/mohitharge/", "_blank")
 						}>
@@ -77,22 +77,11 @@ export default function Hero() {
 						<button className={`button ${button.secondary} leaveSite`}
 						onClick={(e) => {
 								e.preventDefault();
+								isDesktop ? window.alert('Please mail to hargemohit@gmail.com') :
 								window.location.href = 'mailto:hargemohit@gmail.com';
 						}}>
-								{content.buttons.secondary.title}
+							{content.buttons.secondary.title}
 						</button>
-				</section>
-					<button	className={`button ${button.primary}`}
-							onClick={ (e) => {
-								window.location.href = 'mailto:hargemohit@gmail.com'
-								e.preventDefault()
-								} } >
-						{content.buttons.primary.title}
-					</button>
-					<button className={`button ${button.secondary} leaveSite`}
-							onClick={ ()=> window.open("https://www.linkedin.com/in/mohitharge/", "_blank") } >
-						{content.buttons.secondary.title}
-					</button>
 				</section>
 			</Container>
 			<HeroBg theme="bg-color-1" />
