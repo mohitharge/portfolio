@@ -33,7 +33,7 @@ export default function HomePage() {
         keywords="Front-End Developer, React.js, Next.js, Web Development, HTML5, CSS3, Portfolio, Software Engineer, Javascript"
         author="Mohit Harge"
         image="https://raw.githubusercontent.com/mohitharge/portfolio/main/public/img/mythumbnail.png"
-        url="https://mohitharge.vercel.app/"
+        url="https://mohitharge.vercel.app"
         structuredData={structuredData}
       />
 			<Color colors={colors} />
