@@ -11,7 +11,7 @@ const SEO = ({ title, description, keywords, author, image, url, structuredData 
       <meta name="google-site-verification" content="CfAeejrlRWQUpf_WMBXiVW-dgHiUtnHdV1V3Z-VOwMQ" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content="https://raw.githubusercontent.com/mohitharge/portfolio/main/public/img/mythumbnail.png" />
+      <meta property="og:image" content="" />
       <meta property="og:image:alt" content="Profile photo of Mohit Harge" />
       <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
