@@ -32,18 +32,6 @@
 
 	"social": [
 		{
-			"url": "https://www.linkedin.com/in/mohitharge/",
-			"icon": "linkedin"
-		},
-		{
-			"url": "https://github.com/mohitharge",
-			"icon": "github"
-		},
-		{
-			"url": "https://mohitharge.hashnode.dev/",
-			"icon": "hashnode"
-		},
-		{
 			"url": "https://www.upwork.com/freelancers/~017b27cd4e56a389e0?mp_source=share",
 			"icon": "upwork"
 		},
@@ -56,12 +44,12 @@
 			"icon": "leetcode"
 		},
 		{
-			"url": "https://www.hackerrank.com/profile/hargemohit",
-			"icon": "hackerrank"
+			"url": "https://mohitharge.hashnode.dev/",
+			"icon": "hashnode"
 		},
 		{
-			"url": "https://www.figma.com/@mohitharge",
-			"icon": "figma"
+			"url": "https://www.hackerrank.com/profile/hargemohit",
+			"icon": "hackerrank"
 		},
 		{
 			"url": "https://www.behance.net/mohitharge",
@@ -70,6 +58,18 @@
 		{
 			"url": "https://medium.com/@hargemohit",
 			"icon": "medium"
+		},
+		{
+			"url": "https://github.com/mohitharge",
+			"icon": "github"
+		},
+		{
+			"url": "https://www.linkedin.com/in/mohitharge/",
+			"icon": "linkedin"
+		},
+		{
+			"url": "https://www.figma.com/@mohitharge",
+			"icon": "figma"
 		},
 		{
 			"url": "https://wa.me/9156355901?text=Hello, I am interested in your services.",
