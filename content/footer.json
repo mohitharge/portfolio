@@ -74,6 +74,10 @@
 		{
 			"url": "https://wa.me/9156355901?text=Hello, I am interested in your services.",
 			"icon": "whatsapp"
+		},
+		{
+			"url": "https://www.instagram.com/mohit.h_7/",
+			"icon": "instagram"
 		}
 	]
 }
