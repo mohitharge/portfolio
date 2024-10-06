@@ -2,7 +2,7 @@
 import Image from 'next/image'
 
 import Badges 		from '../../utils/badge.list.util'
-
+import button 		from '../../../styles/blocks/button.module.scss';
 // Section structure
 import Section from '../../structure/section';
 import Container from '../../structure/container';
@@ -13,6 +13,7 @@ import SectionGridBg from '../../blocks/section.grid.block'
 
 // Career scss
 import career from '../../../styles/sections/index/career.module.scss'
+import { isDesktop } from '../../helperhooks/helperhooks';
 
 /**
  * Section: Career
@@ -29,6 +30,12 @@ export default function Career() {
 					subTitle="I am current managing, designing, and developing all consumer and digital product initiatives at My Supply Co."
 				/>
 				<section className={career.area}>
+					<div style={{marginTop:"-5rem", textAlign:"center", marginBottom:"2rem"}}>
+						<button className={`button ${button.secondary} leaveSite`}
+								onClick={() => window.open("/resume.pdf", "_blank")} >
+							{`${isDesktop ? "Download Resume PDF - June,2024" : "Download PDF - June,2024"}`}
+						</button>
+					</div>
 					<article className={career.company}>
 						<div className={career.companyContent}>
 							<span className={career.companyHeader}>
