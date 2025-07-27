@@ -32,16 +32,20 @@
 
 	"social": [
 		{
-			"url": "https://www.upwork.com/freelancers/~017b27cd4e56a389e0?mp_source=share",
-			"icon": "upwork"
+			"url": "https://www.linkedin.com/in/mohitharge/",
+			"icon": "linkedin"
 		},
 		{
-			"url": "https://www.freelancer.in/u/hargemohit?sb=t",
-			"icon": "freelancer"
+			"url": "https://github.com/mohitharge",
+			"icon": "github"
 		},
 		{
-			"url": "https://leetcode.com/u/hargemohit/",
-			"icon": "leetcode"
+			"url": "https://wa.me/9156355901?text=Hi! I’m interested in your software development services. Please share more details. Thanks!",
+			"icon": "whatsapp"
+		},
+		{
+			"url": "https://www.instagram.com/mohit.h_7/",
+			"icon": "instagram"
 		},
 		{
 			"url": "https://mohitharge.hashnode.dev/",
@@ -60,24 +64,20 @@
 			"icon": "medium"
 		},
 		{
-			"url": "https://github.com/mohitharge",
-			"icon": "github"
-		},
-		{
-			"url": "https://www.linkedin.com/in/mohitharge/",
-			"icon": "linkedin"
-		},
-		{
 			"url": "https://www.figma.com/@mohitharge",
 			"icon": "figma"
 		},
 		{
-			"url": "https://wa.me/9156355901?text=Hello, I am interested in your services.",
-			"icon": "whatsapp"
+			"url": "https://www.upwork.com/freelancers/~017b27cd4e56a389e0?mp_source=share",
+			"icon": "upwork"
 		},
 		{
-			"url": "https://www.instagram.com/mohit.h_7/",
-			"icon": "instagram"
+			"url": "https://www.freelancer.in/u/hargemohit?sb=t",
+			"icon": "freelancer"
+		},
+		{
+			"url": "https://leetcode.com/u/hargemohit/",
+			"icon": "leetcode"
 		}
 	]
 }

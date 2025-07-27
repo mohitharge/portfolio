@@ -31,15 +31,23 @@ library.add(fat, fal, fas, fad, far, fab)
  * @param 	{array} icon request props [ iconType, iconKey ]
  * @returns {jsx} 	<Icon />
  */
+
 export default function Icon({ icon }) {
+  const [ iconType, iconKey ] = icon
+  const [ stateIconKey, setIconKey ] = useState('')
 
-	const [ iconType, iconKey ] = icon
+  useEffect(() => {
+    if (iconKey && typeof iconKey === 'string') {
+      setIconKey(iconKey)
+    }
+  }, [iconKey])
 
-	const [ stateIconKey, setIconKey ] = useState('circle-notch')
+  // Only render if both iconType and stateIconKey are not empty
+  if (!iconType || !stateIconKey) {
+    return null // Or render a fallback/loading spinner/etc.
+  }
 
-	useEffect( () => setIconKey( iconKey ), [ iconKey ] )
-
-	return (
-		<FontAwesomeIcon icon={[ iconType, stateIconKey ]} />
-	)
+  return (
+    <FontAwesomeIcon icon={[ iconType, stateIconKey ]} />
+  )
 }
