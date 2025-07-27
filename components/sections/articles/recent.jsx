@@ -7,6 +7,7 @@ import SectionTitle from '../../blocks/section.title.block'
 import Icon from '../../utils/icon.util'
 
 import css from '../../../styles/sections/articles/recent.module.scss'
+import { FaExternalLinkAlt, FaMedium } from 'react-icons/fa';
 
 export default function Recent({ mediumArticles }) {
 
@@ -32,7 +33,7 @@ export default function Recent({ mediumArticles }) {
 									<Image src={thumbnail} alt="Article thumbnail" />
 								</span>
 								<span className={css.header}>
-									<a href={link} rel="noreferrer" target="_blank">{title} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
+									<a href={link} rel="noreferrer" target="_blank">{title} <FaExternalLinkAlt size={20} /></a>
 								</span>
 								<span className={css.descriptionContainer}>
 								</span>
@@ -43,7 +44,7 @@ export default function Recent({ mediumArticles }) {
 								<span className={css.topicsContainer}>
 									{
 									categories.map( (e, index) => {
-										return ( <span key={index} className={css.topics}><Icon icon={[ 'fab', 'medium' ]} /> {e}</span> )
+										return ( <span key={index} className={css.topics}><FaMedium size={20} /> {e}</span> )
 									})
 									}
 								</span>

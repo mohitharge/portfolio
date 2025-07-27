@@ -1,28 +1,7 @@
-import { useEffect } from 'react'
-// import { m, useAnimation } from "framer-motion"
-import { useInView } from 'react-intersection-observer'
-
-// Utility components
-import Icon from '../utils/icon.util.jsx'
-
-/**
-* scss reference for utils should probably be pulled in from the first component under the section
-*/
 import badges from '../../styles/blocks/badges.module.scss';
-
+import { myIconMap } from './myIconMap';
 
 export default function Badges({ list, block, color, fullContainer, page }) {
-
-	// const controls = useAnimation();
-	// const { ref, inView  } = useInView({
-	// 	"threshold": 0.5,
-	// 	"triggerOnce": false
-	// })
-
-	// useEffect( () => {
-	// 	if ( inView ) {	controls.start("visible") }
-	// 	if ( !inView ) { controls.start("hidden") }
-	// }, [ controls, inView ] );
 
 	const container = {
 		hidden: { 
@@ -44,7 +23,7 @@ export default function Badges({ list, block, color, fullContainer, page }) {
 	const item = {
 		hidden: { 
 			y: 20, 
-			opacity: -0.5 
+			opacity: 0
 		},
 		visible: {
 			y: 0,
@@ -54,7 +33,7 @@ export default function Badges({ list, block, color, fullContainer, page }) {
 
 	return (
 		<ul
-			className={`${badges.list} ${badges[block]} ${badges[fullContainer]}`}
+			className={`${badges.list} ${badges[block]} ${fullContainer ? badges.fullContainer : ''}`}
 			//Animations
 				// ref={ref}
 				variants={container}
@@ -67,7 +46,7 @@ export default function Badges({ list, block, color, fullContainer, page }) {
 			return ( 
 				<li 
 					key={name}
-					style={page == "services" ? {width:"100%", fontSize:"16px"} : {}} 
+					style={page == "services" ? {width:"100%", fontSize:"12px"} : {}} 
 					className={`${badges.item} ${key}`}
 					//Animations
 					variants={item} >
@@ -81,21 +60,14 @@ export default function Badges({ list, block, color, fullContainer, page }) {
 	)
 }
 
-function IconModule({ iconKey, iconType, color }) {
-	let colored = 'colored'
-	if (color === false) { colored = '' }
+function IconModule({ iconKey, color }) {
+  const IconComponent = myIconMap[iconKey]
+  if (!IconComponent) return null
 
-	switch (iconType) {
-		case 'far':
-		case 'fad':
-		case 'fat':
-		case 'fas':
-			return ( <Icon icon={[ iconType, iconKey ]} /> )
-		case 'devicon':
-			return ( <i className={`devicon-${iconKey}-plain ${colored}`} /> )
-		default:
-			return ( '' )
-	}
+  // You can style color based on props if needed. Example:
+  const style = color === false ? {} : { color: 'currentColor' }
+
+  return <IconComponent style={style} className={color !== false ? 'colored' : ''} />
 }
 		
 		

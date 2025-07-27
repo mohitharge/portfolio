@@ -1,30 +1,22 @@
-// Util packages
-import Icon from '../utils/icon.util'
+import { FaAssistiveListeningSystems, FaProjectDiagram } from 'react-icons/fa';
 
-// Utility packages
-import space from '../utils/spacing.util';
+const iconMap = {
+  'ear-listen': FaAssistiveListeningSystems,
+  'chart-network': FaProjectDiagram,
+};
 
-/**
- * About section component block that contains the written copy
- * 
- * @param {string} 	classProp template literals of classes for contain
- * @param {array}	icon request props [ iconType, iconKey ] 
- * @param {string} 	title to be displayed 
- * @param {string} 	copy written content
- * @returns {jsx} <CopyBlock />
- */
 export default function CopyBlock({ containerClass, iconClass, icon, title, copy }) {
-	return (
-		<>
-		<div className={containerClass}>
-			<span className={iconClass}>
-				<Icon icon={icon} />
-			</span>
-			<h3>{title}</h3>
-			<p>
-				{copy}
-			</p>
-		</div>
-		</>
-	)
+  // If icon is array like ['fat', 'ear-listen'], extract last string
+  const iconKey = Array.isArray(icon) ? icon[1] : icon;
+  const IconComponent = iconMap[iconKey];
+
+  return (
+    <div className={containerClass}>
+      <span className={iconClass}>
+        {IconComponent ? <IconComponent size={24} /> : null}
+      </span>
+      <h3>{title}</h3>
+      <p>{copy}</p>
+    </div>
+  );
 }

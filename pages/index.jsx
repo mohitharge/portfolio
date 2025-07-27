@@ -6,19 +6,19 @@ import colors from '../content/index/_colors.json'
 
 // Dynamic imports for other sections with Suspense fallback
 const Looking = dynamic(() => import('../components/sections/index/looking'), {
-  loading: () => <div>Loading...</div>,
+  loading: () => <Loader />,
 });
 const FeaturedProjects = dynamic(() => import('../components/sections/projects/featured'), {
-  loading: () => <div>Loading...</div>,
+  loading: () => <Loader />,
 });
 const About = dynamic(() => import('../components/sections/index/about'), {
-  loading: () => <div>Loading...</div>,
+  loading: () => <Loader />,
 });
 const Technical = dynamic(() => import('../components/sections/index/technical'), {
-  loading: () => <div>Loading...</div>,
+  loading: () => <Loader />,
 });
 const Career = dynamic(() => import('../components/sections/index/career'), {
-  loading: () => <div>Loading...</div>,
+  loading: () => <Loader />,
 });
 const Color = dynamic(() => import('../components/utils/page.colors.util'), {
   loading: () => null,
@@ -26,6 +26,7 @@ const Color = dynamic(() => import('../components/utils/page.colors.util'), {
 
 import SEO from './seo'
 import LazyLoad from '../components/utils/LazyLoad';
+import Loader from '../components/utils/Loader';
 
 export default function HomePage() {
 	const structuredData = {

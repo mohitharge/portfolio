@@ -21,7 +21,7 @@ $background: 	--background-dim2;
 	row-gap: var(--size-2-);
 	font-family: var(--font-accent);
 	font-weight: 600;
-	font-size: var(--font-xs);
+	font-size: 12px;
 	list-style: none;
 
 	.item {
@@ -92,7 +92,7 @@ $background: 	--background-dim2;
 	&.methods {
 		.item {
 			padding: .5rem 1rem;
-			font-size: .9rem;
+			font-size: 12px;
 			font-weight: 600;
 			border-radius: .5rem;
 			width: calc(50% - 0.25rem);

@@ -42,17 +42,17 @@ export default function Technical() {
 							fullContainer="fullContainer" 
 							icon="laptop-code"
 							containerClass={about.container}
-							headerIcon={about.icon} 
+							headerIcon={`${about.icon}`}
 						/>
 						<BadgesBlock 
 							title="Software I love to work with" 
-							copy="With over 2.7+ years of experience developing web applications, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time."
+							copy="With over 3.7+ years of experience developing web applications, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time."
 							list={software}
 							block="software" 
 							fullContainer="fullContainer"
 							icon="grid-2-plus"
 							containerClass={about.container}
-							headerIcon={about.icon} 
+							headerIcon={`${about.icon}`}
 						/>
 						<CopyBlock 
 							title="Polymath foundations"

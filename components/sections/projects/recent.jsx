@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Icon from '../../utils/icon.util'
 
 import css from '../../../styles/sections/projects/recent.module.scss'
+import { FaCodeBranch, FaExternalLinkAlt, FaStar } from 'react-icons/fa';
 
 export default function GitProjects({ repos, user }) {
 	return (
@@ -17,7 +18,7 @@ export default function GitProjects({ repos, user }) {
 					<Image className={css.profilePhoto} src={`${user[0].avatar_url}`} alt="Github Profile Photo" height={60} width={60}/>
 					<span className={css.details}>
 						<p>{user[0].name}</p>
-						<a href={user[0].html_url} rel="noreferrer" target="_blank">{user[0].html_url} <Icon icon={[ 'far', 'arrow-up-right-from-square' ]} /></a>
+						<a href={user[0].html_url} rel="noreferrer" target="_blank">{user[0].html_url} <FaExternalLinkAlt size={20} /></a>
 					</span>
 				</section>
 				<div className={css.projects}>
@@ -28,7 +29,7 @@ export default function GitProjects({ repos, user }) {
 							<>
 							<article key={index} className={css.project}>
 								<span className={css.header}>
-									<a href={html_url} rel="noreferrer" target="_blank">{name} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
+									<a href={html_url} rel="noreferrer" target="_blank">{name} <FaExternalLinkAlt size={20} /></a>
 									<p className={css.homepage}>{homepage}</p>
 								</span>
 								<span className={css.descriptionContainer}>
@@ -36,8 +37,8 @@ export default function GitProjects({ repos, user }) {
 								</span>
 								<span className={css.details}>
 									<p><i className={`devicon-${language.toLowerCase()}-plain colored`} /> {language}</p>
-									<p><Icon icon={[ 'fad', 'star' ]} /> {watchers}</p>
-									<p><Icon icon={[ 'fad', 'code-branch' ]} /> {forks_count}</p>
+									<p><FaStar size={18} /> {watchers}</p>
+									<p><FaCodeBranch size={18} /> {forks_count}</p>
 									<p className={css.pushedAt}>{date}</p>
 								</span>
 								<span className={css.topicsContainer}>

@@ -8,10 +8,11 @@ import Badges 		from '../../utils/badge.list.util'
 import Icon 		from '../../utils/icon.util'
 
 import css 			from '../../../styles/sections/projects/featured.module.scss'
+import { FaSignInAlt } from 'react-icons/fa'
 
 export default function FeaturedProject({ content }, index) {
 
-	const { project, url, repo, descriptionTitle,description, stack, imageOptions, images } = content
+	const { project, url, repo, descriptionTitle,description, stack, images } = content
 
 	// const controls = useAnimation();
 	const { ref, inView  } = useInView({
@@ -48,7 +49,7 @@ export default function FeaturedProject({ content }, index) {
 						<Badges list={stack} block="stack" fullContainer={false} color={false} />
 					</div>
 					<div variants={''} className={css.viewProject} onClick={ ()=> window.open(url, "_blank") }>
-						<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
+						<FaSignInAlt size={24} color="#000" />
 					</div>
 				</div>
 			</div>
