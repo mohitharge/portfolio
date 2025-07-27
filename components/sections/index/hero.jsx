@@ -6,8 +6,7 @@ import space		from '../../utils/spacing.util';
 import hero 		from '../../../styles/sections/index/hero.module.scss';
 import button 		from '../../../styles/blocks/button.module.scss';
 import content		from '../../../content/index/hero.json'
-import { isDesktop } from '../../helperhooks/helperhooks';
-
+import HeroBg from '../../blocks/hero.bg.block';
 
 /**
  * TO DO LIST
