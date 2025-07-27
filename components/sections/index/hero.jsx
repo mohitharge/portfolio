@@ -65,7 +65,7 @@ export default function Hero() {
             <i className="devicon-devicon-plain"></i> <h3> {content.header.des2}</h3>
 					</div>
 				</section>
-				<section>
+				<section style={{display:"flex", alignItems:"center", flexDirection:"column", gap:"16px"}}>
 					<p className={`${hero.primaryBright} subtitle ${space(["verticalLrg"])}`}>
 						{ content.paragraph }
 					</p>					
@@ -74,14 +74,14 @@ export default function Hero() {
 						}>
 								{content.buttons.primary.title}
 						</button>
-						<button className={`button ${button.secondary} leaveSite`}
+						{/* <button className={`button ${button.secondary} leaveSite`}
 						onClick={(e) => {
 								e.preventDefault();
 								isDesktop ? window.alert('Please mail to hargemohit@gmail.com') :
 								window.location.href = 'mailto:hargemohit@gmail.com';
 						}}>
 							{content.buttons.secondary.title}
-						</button>
+						</button> */}
 				</section>
 			</Container>
 			<HeroBg theme="bg-color-1" />

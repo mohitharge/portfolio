@@ -1,12 +1,31 @@
-import Hero from '../components/sections/index/hero'
-import Looking from '../components/sections/index/looking'
-import About from '../components/sections/index/about'
-import Technical from '../components/sections/index/technical'
-import Career from '../components/sections/index/career'
-import FeaturedProjects from '../components/sections/projects/featured'
-import Color from '../components/utils/page.colors.util'
+import dynamic from 'next/dynamic';
+
+// Eagerly load critical / above-the-fold component(s)
+import Hero from '../components/sections/index/hero';
 import colors from '../content/index/_colors.json'
+
+// Dynamic imports for other sections with Suspense fallback
+const Looking = dynamic(() => import('../components/sections/index/looking'), {
+  loading: () => <div>Loading...</div>,
+});
+const FeaturedProjects = dynamic(() => import('../components/sections/projects/featured'), {
+  loading: () => <div>Loading...</div>,
+});
+const About = dynamic(() => import('../components/sections/index/about'), {
+  loading: () => <div>Loading...</div>,
+});
+const Technical = dynamic(() => import('../components/sections/index/technical'), {
+  loading: () => <div>Loading...</div>,
+});
+const Career = dynamic(() => import('../components/sections/index/career'), {
+  loading: () => <div>Loading...</div>,
+});
+const Color = dynamic(() => import('../components/utils/page.colors.util'), {
+  loading: () => null,
+});
+
 import SEO from './seo'
+import LazyLoad from '../components/utils/LazyLoad';
 
 export default function HomePage() {
 	const structuredData = {
@@ -14,12 +33,8 @@ export default function HomePage() {
     "@type": "Person",
     "name": "Mohit Harge",
     "url": "https://mohitharge.vercel.app/",
-    "image": "/public/img/homethumbnail.png",
-    "jobTitle": "Front-End Developer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "IntrCity SmartBus"
-    },
+    "image": "/public/img/mythumbnail.jpg",
+    "jobTitle": "Software Engineer",
     "sameAs": [
       "https://www.linkedin.com/in/mohitharge/",
       "https://github.com/mohitharge"
@@ -35,13 +50,16 @@ export default function HomePage() {
         url="https://mohitharge.vercel.app"
         structuredData={structuredData}
       />
-			<Color colors={colors} />
-			<Hero />
-			<Looking />
-			<FeaturedProjects />
-			<About />
-			<Technical />
-			<Career />
+      {/* Load Hero immediately */}
+      <Hero />
+
+      {/* Lazy load sections individually on scroll */}
+      <LazyLoad><Color colors={colors} /></LazyLoad>
+      <LazyLoad><Looking /></LazyLoad>
+      <LazyLoad><FeaturedProjects /></LazyLoad>
+      <LazyLoad><About /></LazyLoad>
+      <LazyLoad><Technical /></LazyLoad>
+      <LazyLoad><Career /></LazyLoad>
 		</>
 	);
 }
