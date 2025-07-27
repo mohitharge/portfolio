@@ -1,13 +1,8 @@
 import Image from 'next/image'
-
-import { useEffect } from 'react'
 // import { m, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
-
-import Badges 		from '../../utils/badge.list.util'
-import Icon 		from '../../utils/icon.util'
-
-import css 			from '../../../styles/sections/projects/featured.module.scss'
+import Badges	from '../../utils/badge.list.util'
+import css from '../../../styles/sections/projects/featured.module.scss'
 import { FaSignInAlt } from 'react-icons/fa'
 
 export default function FeaturedProject({ content }, index) {
