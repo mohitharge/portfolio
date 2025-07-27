@@ -7,7 +7,7 @@ import Image from 'next/image'
  */
 import hero from '../../../styles/sections/index/hero.module.scss';
 
-export default function bgColor1() {
+export default function BgColor1() {
 	return (
 		<div className={`${hero.colorfulV1}`}>
 			<div className={`${hero.barContainer} noEvents`}>

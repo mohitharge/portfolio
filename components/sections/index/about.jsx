@@ -31,7 +31,7 @@ export default function About() {
 					title="About Me"
 					preTitle="Synopsis"
 					id="aboutme"
-					subTitle="Front-End Developer with 3+ years of experience building responsive, high-performance web apps using ReactJS and JavaScript. Known for clean code, consistent delivery, and optimizing workflows. Skilled in problem-solving, troubleshooting, and thriving in fast-paced environments with strong attention to detail and a willingness to learn."
+					subTitle="Front-End Developer with 3.7+ years of experience building responsive, high-performance web apps using ReactJS and JavaScript. Known for clean code, consistent delivery, and optimizing workflows. Skilled in problem-solving, troubleshooting, and thriving in fast-paced environments with strong attention to detail and a willingness to learn."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>

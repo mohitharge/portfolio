@@ -136,12 +136,27 @@ const Services = () => {
         <p>This page is being updated with detailed information and will be available soon.</p> <br />
         <h1>Get Started with Our Services</h1>
         <p>To help us understand your needs better and provide you with the best possible service, please fill out the questionnaire for the specific service you are interested in.</p>
-        <div style={{display:"flex", flexDirection:"column", alignItems:"center", marginTop:"2rem"}}>
-          <div style={isDesktop ? {padding:"0 2rem"} : {}}>
-            <Image style={{cursor:"pointer"}} onClick={ ()=> window.open("https://forms.gle/g2h8S9gVxNr2MToz5", "_blank")} height={200} width={645} src="/img/questionnaire.png" alt="questionnaire" />
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '2rem', minHeight: '70rem', width: '100%'}}>
+          <div style={isDesktop ? {padding: "0 2rem", width: '100%'} : {width: '100%'}}>
+            <Image 
+              style={{cursor: "pointer"}} 
+              onClick={() => window.open("https://forms.gle/g2h8S9gVxNr2MToz5", "_blank")} 
+              height={200} 
+              width={645} 
+              src="/img/questionnaire.png" 
+              alt="questionnaire" 
+            />
           </div>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe94vsVtazvKEVogk389OnOBjgGJ8qbi_dWu0lRpPFSqMPcYg/viewform?embedded=true" width={isDesktop ? "900" : "390"} height={isDesktop ? "3400" : "3600"} frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe94vsVtazvKEVogk389OnOBjgGJ8qbi_dWu0lRpPFSqMPcYg/viewform?embedded=true" 
+            frameBorder="0" 
+            style={{width: '100%', minWidth:'24.2rem', height: `${isDesktop ? '210rem' : '235rem'}`, border: 'none', marginTop: '1rem'}} 
+            title="Google Form"
+          >
+            Loading…
+          </iframe>
         </div>
+
       </div>
     </>
   )

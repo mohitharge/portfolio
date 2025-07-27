@@ -43,7 +43,9 @@ import {
   FaChrome,
   FaFirefoxBrowser,
   FaSafari,
-  FaDatabase,         // Fallback for some tools
+  FaDatabase,
+  FaAtom,
+  FaJava,         // Fallback for some tools
   // ...import more as needed
 } from 'react-icons/fa'
 
@@ -99,6 +101,9 @@ import {
 
 // Game Icons, Dev Icons, etc. for other special/fun icons (if needed)
 import { GiCopilot, GiArtificialIntelligence, GiGemini } from 'react-icons/gi'
+import { VscVscode } from 'react-icons/vsc'
+import { DiJava, DiMysql } from 'react-icons/di'
+import { GrMysql } from 'react-icons/gr'
 
 export const myIconMap = {
   // Socials, tools, brands (existing)
@@ -155,7 +160,7 @@ export const myIconMap = {
   redux: SiRedux,
   webpack: SiWebpack,
   git: SiGit,
-  mysql: SiMysql,
+  mysql: GrMysql,
   mongodb: SiMongodb,
   html5: SiHtml5,
   css3: SiCss3,
@@ -168,7 +173,7 @@ export const myIconMap = {
   materialui: SiMaterialui,
   sass: SiSass,
   python: SiPython,
-  java: SiJava,
+  java: FaJava,
 
   // Methods (as before)
   'planet-moon': FaGlobe,
@@ -176,7 +181,7 @@ export const myIconMap = {
   window: FaWindowMaximize,
   'layer-plus': FaLayerGroup,
   'solar-system': FaSolarPanel,
-  vscode: SiVscode,
+  vscode: VscVscode,
   mailbox: SiPostman,            // Or FaEnvelope as fallback; SiPostman is preferred
   postman: SiPostman,
   jenkins: SiJenkins,
@@ -185,7 +190,7 @@ export const myIconMap = {
   canva: SiCanva,
   photoshop: SiAdobephotoshop,
   codepen: SiCodepen,
-  atom: SiAtom,
+  atom: FaAtom,
   bash: SiGnubash,
   terminal: FaTerminal,
   trello: SiTrello,

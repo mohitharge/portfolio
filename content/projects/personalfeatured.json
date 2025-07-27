@@ -64,7 +64,6 @@
 			{ "key": "portfolio", "hover": "right", "h": "1258", "w": "2236",  "url": "/img/pd3.png" }
 		],
 		"stack": [
-      { "key": "xd", "name": "Adobe XD", "type": "devicon" },
 			{ "key": "figma", "name": "Figma", "type": "devicon" }
 		]
 	}

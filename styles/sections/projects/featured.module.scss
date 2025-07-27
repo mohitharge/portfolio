@@ -271,6 +271,7 @@
 	.project {
 		&:nth-of-type(n) {
 			flex-direction: column;
+			gap: 2rem;
 
 			&:hover {
 				.details {
@@ -291,12 +292,16 @@
 					display: none;
 				}
 				ul {
-					font-size: .6rem;
+					font-size: 12px;
 				}
 			}
 
 			.imageContainer {
-				height: 100px;
+				height: 520px;
+				width: 100%;
+			}
+			.imageContainer2 {
+				height: 120px;
 				width: 100%;
 			}
 

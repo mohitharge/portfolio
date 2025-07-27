@@ -43,14 +43,14 @@ export default function FeaturedProject({ content }, index) {
 					<div className={css.stackContainer}>
 						<Badges list={stack} block="stack" fullContainer={false} color={false} />
 					</div>
-					<div variants={''} className={css.viewProject} onClick={ ()=> window.open(url, "_blank") }>
+					{url && <div variants={''} className={css.viewProject} onClick={ ()=> window.open(url, "_blank") }>
 						<FaSignInAlt size={24} color="#000" />
-					</div>
+					</div>}
 				</div>
 			</div>
 
-			<div className={css.imageContainer}>
-				<span className={project == "UI UX Project" ? `${css.imageAnimationContainer2}` : `${css.imageAnimationContainer}`}>
+			{project !== "UI UX Project" && <div className={css.imageContainer}>
+				<span className={`${css.imageAnimationContainer}`}>
 					{ images.map( ({key, url, hover, h, w }, index) => {
 						hover = ( hover === 'left' ) ? hoverLeft : hoverRight
 						return (
@@ -62,7 +62,7 @@ export default function FeaturedProject({ content }, index) {
 						)}
 					) }
 				</span>
-			</div>
+			</div>}
 		</section>
 	)
 }

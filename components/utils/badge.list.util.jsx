@@ -67,7 +67,7 @@ function IconModule({ iconKey, color }) {
   // You can style color based on props if needed. Example:
   const style = color === false ? {} : { color: 'currentColor' }
 
-  return <IconComponent style={style} className={color !== false ? 'colored' : ''} />
+  return <IconComponent size={22} style={style} className={color !== false ? 'colored' : ''} />
 }
 		
 		

@@ -1,3 +1,5 @@
+import BgColor1 from "./hero.bg/bg-color-1";
+
 /**
  * Loads and returns the background based on selected design theme
  * 
@@ -15,6 +17,6 @@ export default function HeroBg({ theme }) {
 function bgSelector(bg) { 
 	switch (bg) {
 		case 'bg-color-1':
-		return ( <bgColor1 /> );
+		return ( <BgColor1 /> );
 	}
 }
