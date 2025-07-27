@@ -34,15 +34,14 @@ export default function Projects({ user, repos }) {
 
 	return (
 		<>
-			<SEO 
-        title="Projects - Mohit Harge"
-        description="Explore the projects developed by Mohit Harge, showcasing skills in full-stack development, UI/UX design, and more."
-        keywords="Projects, Full-Stack Development Projects, Frontend Development Projects, UI/UX Design Projects, Mohit Harge"
-        author="Mohit Harge"
-        image="https://mohitharge.vercel.app/projects-image.jpg"
-        url="https://mohitharge.vercel.app/projects"
-        structuredData={structuredData}
-      />
+		<SEO 
+			title="Projects - Mohit Harge | Senior Front-End Engineer & Full-Stack Developer"
+			description="Discover a portfolio of innovative projects by Mohit Harge, highlighting expertise in scalable full-stack development, React-based front-end design, responsive UI/UX, and modern web technologies."
+			keywords="Mohit Harge Projects, Full-Stack Development, React Projects, Front-End Development, UI/UX Design, Web Applications, Software Development Portfolio"
+			author="Mohit Harge"
+			url="https://mohitharge.vercel.app/projects"
+			structuredData={structuredData}
+		/>
 		<Color colors={colors} />
 		<FeaturedProjects />
 		{/* <GitRecentProjects user={user} repos={repos} /> */}

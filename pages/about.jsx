@@ -30,10 +30,9 @@ const AboutMe = () => {
     <>
       <SEO 
         title="About Me - Mohit Harge"
-        description="Learn more about Mohit Harge, an experienced Front-End Developer with a passion for creating responsive and user-friendly web applications."
-        keywords="About Front-End Developer, Mohit Harge, Web Developer, Portfolio"
+        description="Mohit Harge is a Senior Front-End Engineer specializing in React and full-stack development. With extensive experience in scalable web applications, API integration, UI/UX design, and performance optimization, he delivers impactful digital solutions and innovative features."
+        keywords="Mohit Harge, Senior Front-End Engineer, React Developer, Full-stack Developer, Web Applications, UI/UX, Performance Optimization, Portfolio"
         author="Mohit Harge"
-        image="https://mohitharge.vercel.app/about-me-image.jpg"
         url="https://mohitharge.vercel.app/about"
         structuredData={structuredData}
       />

@@ -35,14 +35,14 @@ const Services = () => {
   return (
     <>
       <SEO 
-      title="Services - Mohit Harge"
-      description="Explore the range of web development services offered by Mohit Harge, including website development, full-stack web application development, UI/UX design, SEO optimizations, hosting services, brand strategy, and digital marketing."
-      keywords="Web Development Services, Full-Stack Development, UI/UX Design, SEO Optimizations, Hosting Services, Brand Strategy, Digital Marketing, Mohit Harge"
-      author="Mohit Harge"
-      image="https://mohitharge.vercel.app/services-image.jpg"
-      url="https://mohitharge.vercel.app/services"
-      structuredData={structuredData}
-    />
+        title="Services - Mohit Harge | Senior Front-End Engineer & Full-Stack Developer"
+        description="Discover professional software development services offered by Mohit Harge, including scalable front-end and full-stack web applications, React development, responsive UI/UX design, API integration, performance optimization, and project consulting."
+        keywords="Software Development Services, Front-End Development, Full-Stack Development, React Developer, UI/UX Design, API Integration, Performance Optimization, Project Consulting, Mohit Harge"
+        author="Mohit Harge"
+        url="https://mohitharge.vercel.app/services"
+        structuredData={structuredData}
+      />
+
       {/* <BentoGridThirdDemo /> */}
       <Section classProp={about.section}>	
         <Container spacing={['verticalXXXLrg']}>

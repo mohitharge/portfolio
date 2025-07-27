@@ -50,11 +50,10 @@ const Resume = () => {
   return (
     <>
       <SEO 
-        title="Resume - Mohit Harge | Front-End Developer, Web Development, UI/UX Design"
-        description="Explore the resume of Mohit Harge, a skilled Front-End Developer specializing in web development, UI/UX design, and more. Discover his professional experience and projects."
-        keywords="Mohit Harge, Front-End Developer, Web Development, UI/UX Design, Resume, Professional Experience"
+        title="Resume - Mohit Harge | Senior Front-End Engineer, React & Full-Stack Developer"
+        description="View the professional resume of Mohit Harge, a Senior Front-End Engineer specialized in React, full-stack web development, UI/UX design, and performance optimization. Explore his expertise and project achievements."
+        keywords="Mohit Harge, Senior Front-End Engineer, React Developer, Full-Stack Developer, UI/UX Design, Web Development, Resume, Software Engineer, Front-End Developer"
         author="Mohit Harge"
-        image="https://mohitharge.vercel.app/resume-image.jpg"
         url="https://mohitharge.vercel.app/resume"
         structuredData={structuredData}
       />
