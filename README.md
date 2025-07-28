@@ -1,58 +1,100 @@
-
-<div align="center">
-  <h1>Mohit Harge | portfolio</h1>
-  <p></p>
-  <img src="https://img.shields.io/badge/stability-beta-blue.svg" alt="Experimental">
-  <img src="https://vercelbadge.vercel.app/api/atlamors/portfolio-theme" alt="Vercel">
-  <img src="https://therealsujitk-vercel-badge.vercel.app/?app=portfolio-theme-jqe0jhmif-atlamors.vercel.app" alt="Vercel Deployed">
-  <img src="https://img.shields.io/github/license/atlamors/portfolio-theme" alt="Liscence">
-  <br><br>
-</div>
-
-<!-- <img src="https://www.andrewnelson.net/img/preview.png"> -->
+<h1>Mohit Harge | Portfolio</h1>
+<h2>Building impactful software with passion, discipline, and a growth mindset.</h2>
 
 ## Updates
-#### Dev Update — July 6th, 2023 🥰
-We have relocated to a beautiful home in the suburbs of Langely, BC. There has been a LOT of work unpacking, organizing, and landscaping to get this home perfect for our two toddlers! I am hoping to resume development of the theme in the next couple months!
 
-On a really interesting note, Webflow has launched a React component export tool. I am considering moving all component design and management over to Webflow for easier tooling for marketing teams and visual designers! 
-#### Dev Update — Feb 13th, 2023 [Updated: March 05th, 2023]
-Jest has been setup, but no progress on building tests has been made. Life is busy atm! 
-#### Dev Update — Feb 10th, 2023
-I am currently taking a short break in development of this theme. I am in the final phases of a job search, and getting ready to move into a bigger place to give some much needed room to my growing family! I am hoping to continue development before the end of next quarter!
+#### Dev Update — July 2025  
+🎉 Wrapped up a productive tenure as **Senior Front-End Engineer at IntrCity SmartBus**. Integrated advanced booking systems, loyalty programs, and performance optimizations (Core Web Vitals +30%).  
+Currently focused on elevating my portfolio, expanding open source React utilities, and pursuing new full-stack, product-focused opportunities!
 
-## This website is still being developed! 🥳
-The porftofolio application has currently hit the Beta phase and is ready to be forked if you are familiar with React and Next. The next release cycle will focus on a better DX—moving from local JSON to MongoDB, setting up Sanity for GUI page editing, Unit Testing with Jest, adding TypeScript, etc.
+#### Dev Update — March 2025  
+Completed a portfolio overhaul:  
+- Migrated all project pages and components to **Next.js 14**
+- Adopted **dynamic imports**, code-splitting, and lazy loading for maximal performance
+- Replaced Font Awesome Pro icons with fully open-source `react-icons`  
+- Implemented dark, light, and unicorn themes (mesh gradient animation!)
 
-#### Next & App Architecure
-- [ ] Next.js v13 : Waiting for /app/ folder to leave beta
-- [ ] Sanity.io
+## Project Status
 
-#### App Architecure & Design Systems
-- [ ] App\Systems\Margins : Continuing to develop Design Token System
-- [ ] App\Systems\Padding : Continuing to develop Design Token System
+**Work in Progress:**  
+This portfolio is currently in **Beta** and open for forking! I'm actively seeking contributors (React/Next.js developers, designers, and tech writers).  
+Next up: integrating rich content APIs, CMS-powered data editing, and streamlining the contribution flow.
 
-#### Pages
-- [x] Pages\About
-- [ ] Pages\Case Studies
-- [x] Pages\Articles : API options and connections for Dev.to and HackerNoon not complete
-- [x] Pages\Projects : Single project details page
+### Planned Improvements
 
-#### Articles Page
-- [x] Pages\Articles\Medium\API
-- [ ] Pages\Articles\Dev.to\API
-- [ ] Pages\Articles\HackerNoon\API
+- [ ] Move data from local JSON to **MongoDB** (with plans for **Sanity.io** CMS)
+- [ ] Add unit/integration testing (Jest, React Testing Library)
+- [ ] Gradually upgrade all JS components to **TypeScript**
+- [ ] Enhance mobile/responsive UI and improve A11y
+- [ ] Expand project detail pages with deeper writeups
 
-#### Projects Page
-- [ ] Pages\Projects\Project : Single project details page
+## Architecture Roadmap
 
+**Next.js & Modern App Structure**
+- [x] Upgraded to **Next.js v14**
+- [ ] Sanity.io integration (for dynamic content and CMS)
 
-## Please fork this repo! 🦄
+**Design Systems**
+- [x] CSS Variables: Spacing, Color, Typography tokens
+- [ ] Design token documentation and Figma files
 
-Fork, Install, Editing, and Deploy instructions coming soon(ish)!
+**Content Pages**
+- [x] About
+- [x] Resume
+- [x] Projects (list and featured views)
+- [x] Articles (Medium integration live; Dev.to/HackerNoon in progress)
+- [ ] Case Studies
 
-This is my first open-source contribution, and it was also a great oppoortunity for me to learn! 
+**Articles Page**
+- [x] Medium integration via API
+- [ ] Dev.to integration (target)
+- [ ] HackerNoon integration (target)
 
-It is my hope that by sharing this project it can give others a chance to enjoy learning Nextjs (and have as much fun as I did), and hopefully brings value to people as a portfolio and networking tool!
+**Projects Page**
+- [x] Featured & all projects
+- [ ] Project detail/spotlight pages (WIP)
 
+## Get Involved
 
+**Fork, Install, and Deploy Instructions Coming Soon!**  
+I’m sharing my journey from designer to React/Next.js engineer.  
+If you want to collaborate, review, or contribute—please reach out or fork the repo!
+
+A special thank you to everyone in the open source and web dev community for sharing knowledge, code, and encouragement. 🚀
+
+## About Me
+
+- **Name:** Mohit Harge
+- **Location:** Noida, Uttar Pradesh, India
+- **Tech Stack:**  
+  - **Languages:** JavaScript (ES6+), TypeScript, HTML, CSS/SCSS  
+  - **Frameworks:** React, Next.js, Node.js  
+  - **Styling:** CSS Modules, SCSS, CSS Variables, Styled Components  
+  - **Tools:** Git, Vercel, Webpack, Devicon, Framer Motion, react-icons, SWR  
+  - **APIs & Utilities:** REST, Intersection Observer, React Query  
+  - **Design:** Figma, Adobe XD, Responsive Design, UI/UX prototyping
+
+- **Areas of Focus:**  
+  - Front-End Engineering & Full-Stack Web Development  
+  - UI/UX Implementation  
+  - Performance engineering (Core Web Vitals, Lighthouse)  
+  - Microservice and API integration  
+  - Design Systems & Theming  
+  - Project management and feature planning
+
+- **Notable Projects:**  
+  - **IntrCity SmartBus Online Booking:** Real-time seat selection, booking flow, loyalty features  
+  - **Business Labs Application:** Led team on scalable full-stack app, project management tools  
+  - **Your Business Labs Platform:** Designed wireframes & implemented major UI/UX wins  
+  - **This Portfolio:** Next.js 14, hybrid content, dynamic theming, mesh gradients
+
+- **Contact:**  
+  - [LinkedIn](https://www.linkedin.com/in/mohitharge/)
+  - [Github](https://github.com/mohitharge)
+  - [Portfolio](https://mohitharge.vercel.app/)
+  - [Email](mailto:hargemohit@gmail.com)
+
+> *“Striving for clean code, meaningful impact, and lifelong learning.”*
+
+**Feel free to fork, star, or connect with me for collaboration or opportunities!**  
+Open to freelance, contract, and full-time roles in frontend, full-stack, or product engineering.
