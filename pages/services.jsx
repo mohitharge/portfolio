@@ -47,9 +47,9 @@ const Services = () => {
       <Section classProp={about.section}>	
         <Container spacing={['verticalXXXLrg']}>
           <SectionTitle
-            title="Services - Mohit Harge"
-            // preTitle="Synopsis"
-            id="aboutme"
+            title="Services"
+            preTitle="Synopsis"
+            id="services"
             subTitle="Discover the web development services offered by Mohit Harge, including responsive design, full-stack development, and UI/UX design."
           />
           <section className={about.content}>
