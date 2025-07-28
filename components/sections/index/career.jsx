@@ -26,15 +26,15 @@ export function getDuration(startDate, endDate = null) {
   const end = endDate ? new Date(endDate) : new Date();
 
   let years = end.getFullYear() - start.getFullYear();
-  let months = end.getMonth() - start.getMonth();
+  let mos = end.getMonth() - start.getMonth();
 
-  if (months < 0) {
+  if (mos < 0) {
     years--;
-    months += 12;
+    mos += 12;
   }
 
   // Return string like '2 yrs 03 mos', omit years if 0
-  return `${years > 0 ? `${years} yrs` : ''} ${months.toString().padStart(2, '0')} mos`.trim();
+  return `${years > 0 ? `${years} yrs` : ''} ${mos.toString().padStart(2, '0')} mos`.trim();
 }
 
 export default function Career() {
@@ -159,7 +159,7 @@ export default function Career() {
 							<span className={career.companyHeader}>
 								<h3>Business Labs</h3>
 								<h4>Internship, Full-time</h4>
-								<h4>July 2021 - April 2022 · 10 months</h4>
+								<h4>July 2021 - April 2022 · 10 mos</h4>
 								<h5>Hyderabad, Telangana, India</h5>
 							</span>
 							<p>
