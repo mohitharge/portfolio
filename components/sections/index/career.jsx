@@ -50,8 +50,8 @@ export default function Career() {
 				<section className={career.area}>
 					<div style={{marginTop:"-5rem", textAlign:"center", marginBottom:"2rem"}}>
 						<button className={`button ${button.secondary} leaveSite`}
-								onClick={() => window.open("/Mohit_Harge_Frontend_Engineer_Resume.pdf", "_blank")} >
-							{`${"Download PDF - July,2025"}`}
+								onClick={() => window.open("/Mohit_Harge_Software_Engineer_Resume.pdf", "_blank")} >
+							{`${"Download PDF - Jan, 2026"}`}
 						</button>
 					</div>
 					<article className={career.company}>
